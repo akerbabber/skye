@@ -1,0 +1,6 @@
+allowBuilds:
+  # esbuild: needed by tsx/vitest to link the platform binary.
+  esbuild: true
+  # blake-hash: native addon pulled in transitively by the 0G SDK; it has a JS
+  # fallback and we do not need the native path.
+  blake-hash: false

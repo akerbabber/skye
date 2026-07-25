@@ -1,0 +1,47 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# secrets — a funded 0G wallet key lives in .env. Never commit it.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.wallets/
+
+# build output
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# test / cache
+coverage/
+.vitest/
+.cache/
+.vite/
+
+# foundry / anvil
+cache/
+broadcast/
+anvil.log
+
+# editor / os
+.DS_Store
+.idea/
+*.swp
+.vscode/settings.json
+
+# scratch
+tmp/
+*.local
+
+# Faucet/wallet helper scripts — never publish.
+scripts/generate-wallets.ts
+scripts/sweep-wallets.ts
+
+# Video intermediates — only the final mp4 is committed.
+media/raw/
+media/work/
+media/frames/
