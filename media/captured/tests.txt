@@ -1,0 +1,10 @@
+$ vitest run
+ RUN  v2.1.9 /workspaces/debian-9/skye
+ ✓ tests/schema-audit.test.ts (3 tests) 3ms
+ ✓ tests/tamper.test.ts (15 tests) 53ms
+ ✓ tests/injection.test.ts (1 test) 1478ms
+   ✓ prompt-injection invariance > a token named with an injection payload yields Facts identical to one named "" 1477ms
+ Test Files  3 passed (3)
+      Tests  19 passed (19)
+   Start at  23:00:03
+   Duration  1.86s (transform 103ms, setup 0ms, collect 549ms, tests 1.53s, environment 0ms, prepare 111ms)

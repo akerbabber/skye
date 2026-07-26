@@ -1,0 +1,34 @@
+endpoint https://compute-network-6.integratenetwork.work/v1/proxy
+model    qwen/qwen2.5-omni-7b
+chatID   d5d0442f-441b-45df-b560-efbce9dab2cf
+usage    {"completion_tokens":15,"completion_tokens_details":{"text_tokens":15},"prompt_tokens":30,"prompt_tokens_details":{"text_tokens":30},"total_tokens":45}
+
+RESPONSE:
+{"ok":true,"note":"sealed-check block 0"}
+
+── signature verification 
+broker.inference.processResponse -> true
+teeSignerAddress 0x83df4B8EbA7c0B3B740019b8c9a77ffF77D508cF (acknowledged: true)
+signature    0x19b95f6bd68e19754aaec31ef38322dfe6cdc0c1…
+signed text  "57ce6ba8ddb3476c3f94f68d9d410c890d33ad871238587e39066ef468a328c7:2fd9614130b6462c06a6cca52530fdf795c0512fafd48071e990042"…
+recovered    0x83df4B8EbA7c0B3B740019b8c9a77ffF77D508cF
+
+── remote attestation (best effort) 
+RA link  https://compute-network-6.integratenetwork.work/v1/proxy/attestation/report
+RA bytes 221
+RA sha256 0x0fdded44c0245a19a1c3a576f6609b5ae3f6a8f87dd087a277c1c694554125be
+RA parsed, top-level keys: error
+
+============================================================
+SIGNATURE OK
+============================================================
+{
+  "providerAddress": "0xa48f01287233509FD694a22Bf840225062E67836",
+  "endpoint": "https://compute-network-6.integratenetwork.work/v1/proxy",
+  "model": "qwen/qwen2.5-omni-7b",
+  "chatID": "d5d0442f-441b-45df-b560-efbce9dab2cf",
+  "teeSignerAddress": "0x83df4B8EbA7c0B3B740019b8c9a77ffF77D508cF",
+  "sdkProcessResponse": true,
+  "manualVerification": true,
+  "attestationReportHash": "0x0fdded44c0245a19a1c3a576f6609b5ae3f6a8f87dd087a277c1c694554125be"
+}
